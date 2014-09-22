@@ -5,3 +5,5 @@ The name say it all, this is a chrome extension that show a random bookmark in y
 For Google Chrome only (of course!)
 
 Feel free to fork!
+
+![Screen shot](screenshot.png)
