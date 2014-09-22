@@ -15,5 +15,6 @@
       "run_at": "document_end"
     }
   ],
+  "icons": { "48": "icon.png"},
   "manifest_version": 2
 }
