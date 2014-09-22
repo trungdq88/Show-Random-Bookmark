@@ -1,14 +1,8 @@
-chrome.extension.onRequest.addListener(     //listen to requests
+chrome.extension.onRequest.addListener(
 	function(request, sender, sendResponse) {
-    // alert(sender.tab ?
-    //             "from a content script:" + sender.tab.url :
-    //             "from the extension");
     if (request.msg == "randomBookmark") {
-    	// sendResponse({title: "goodbye", link: 'asd'});  //send response
     	chrome.bookmarks.getTree(function(bookmarkTreeNodes) {
-	      	// result += dumpTreeNodes(bookmarkTreeNodes);
 	      	var result = getRandomBookmark(bookmarkTreeNodes);
-	      	// alert(JSON.stringify(result));
 	      	sendResponse(result);  //send response
 	    });
   	}
