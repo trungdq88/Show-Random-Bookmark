@@ -1,0 +1,19 @@
+{
+  "name": "Show Random Bookmark",
+  "version": "0.0.1",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "*://*/*",
+    "bookmarks"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["myscript.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2
+}
